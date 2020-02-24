@@ -6,6 +6,57 @@ namespace Aulas_dotNet
     {
         static void Main(string[] args)
         {
+            //Exercicio 3 de Repeticao
+            var validacoes = new Repeticao3();
+            
+            string nome;
+            int idade, salario;
+            char sexo, estadoCivil;
+            
+            do
+            {
+            Console.Write("Digite nome com mais de 3 caracteres: ");
+            nome = Console.ReadLine();
+            }
+            while(!validacoes.ValidaNome(nome));
+
+            do
+            {
+            Console.Write("Digite idade entre 0 e 150: ");
+            idade = System.Convert.ToInt32(Console.ReadLine());
+            }
+            while(!validacoes.ValidaIdade(idade));
+
+            do
+            {
+            Console.Write("Digite salario acima de 0: ");
+            salario = System.Convert.ToInt32(Console.ReadLine());
+            }
+            while(!validacoes.ValidaSalario(salario));
+
+            do
+            {
+            Console.Write("Digite sexo (M/F): ");
+            sexo = System.Convert.ToChar(Console.ReadLine());
+            }
+            while(!validacoes.ValidaSexo(sexo));
+
+            do
+            {
+            Console.Write("Digite estado civil (s, c, v, d): ");
+            estadoCivil = System.Convert.ToChar(Console.ReadLine());
+            }
+            while(!validacoes.ValidaEstadoCivil(estadoCivil));
+            Console.Write(  
+                "Nome: " + nome + 
+                "\nIdade: " + idade + 
+                "\nSalario: " + salario +
+                "\nSexo: " + char.ToUpper(sexo) +
+                "\nEstado Civil: " + char.ToUpper(estadoCivil));
+
+            Console.ReadKey();
+
+
             //Exercicio 1 de Decisão
             /*
             var compara = new Maior();
@@ -63,6 +114,7 @@ namespace Aulas_dotNet
             */
 
             //Exercicio 3 de Decisao
+            /*
             var sexo = new Decisao3();
 
             Console.Write("Informe seu sexo (F/M): ");
@@ -70,6 +122,7 @@ namespace Aulas_dotNet
 
             Console.WriteLine("Sexo informado: " + sexo.Sexo(genero));
             Console.ReadKey();
+            */
         }
 
     }
