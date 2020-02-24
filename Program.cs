@@ -6,6 +6,16 @@ namespace Aulas_dotNet
     {
         static void Main(string[] args)
         {
+            //Exercicio 5 de decisão
+            var aluno = new Decisao5();
+            Console.Write("Digite a primeira nota: ");
+            aluno.nota1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Digite a primeira nota: ");
+            aluno.nota2 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Situação: " + aluno.Situacao());
+            Console.ReadKey();
+            
+            /*
             //Exercicio 4 de Repetição
             var populacao = new Repeticao4();
             while(!populacao.Maior())
@@ -19,6 +29,7 @@ namespace Aulas_dotNet
             
 
             Console.ReadKey();
+            */
 
             //Exercicio 4 de decisao
             /*
