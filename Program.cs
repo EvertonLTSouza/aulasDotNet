@@ -6,7 +6,25 @@ namespace Aulas_dotNet
     {
         static void Main(string[] args)
         {
+            //Exercicio 4 de decisao
+            var vogal = new Decisao4();
+
+            Console.Write("Digite um caracter: ");
+            var vog = System.Convert.ToChar(Console.ReadLine());
+
+            if (vogal.volga(vog))
+            {
+                Console.WriteLine("Voce digitou uma Vogal");
+            }
+            else
+            {
+                Console.WriteLine("Voce digitou uma Consoante");
+            }
+
+            Console.ReadKey();
+
             //Exercicio 3 de Repeticao
+            /*
             var validacoes = new Repeticao3();
             
             string nome;
@@ -55,7 +73,7 @@ namespace Aulas_dotNet
                 "\nEstado Civil: " + char.ToUpper(estadoCivil));
 
             Console.ReadKey();
-
+            */
 
             //Exercicio 1 de Decisão
             /*

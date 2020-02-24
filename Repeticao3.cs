@@ -61,10 +61,10 @@ public class Repeticao3
 
             case 'd':
                 return true;    
-                break;
+                
             default:
                 return false;
-                break;
+                
             
         }
     }
