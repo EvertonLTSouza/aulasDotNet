@@ -6,15 +6,14 @@ namespace Aulas_dotNet
     {
         static void Main(string[] args)
         {
-            Magica soma = new Magica();
-            Console.WriteLine("Digite o primeiro numero da soma: ");
+            var compara = new Maior();
+            
+            Console.WriteLine("Digite o primeiro numero: ");
             int num1 = Convert.ToInt32(Console.ReadLine());            
-            Console.WriteLine("Digite o primeiro numero da soma: ");
+            Console.WriteLine("Digite o segundo numero: ");
             int num2 = Convert.ToInt32(Console.ReadLine());
             
-            int result = soma.Soma(num1,num2);
-            
-            Console.WriteLine("A soma e igual a: " + result);
+            Console.WriteLine("O maior numero digitado foi: " + compara.MaiorNumero(num1, num2));
 
             Console.ReadKey();
         }
