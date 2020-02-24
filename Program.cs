@@ -21,7 +21,7 @@ namespace Aulas_dotNet
             */
 
             //Exercicio 1 de Comparação
-            
+            /*
             var valida = new Repeticao1();
 
             Console.WriteLine("Digite um numero entre 0 e 10: ");
@@ -32,6 +32,16 @@ namespace Aulas_dotNet
                 Console.WriteLine("Digite um numero entre 0 e 10: ");
                 num = Convert.ToInt32(Console.ReadLine());
             }
+            Console.ReadKey();
+            */
+            
+            //Segundo exercicio 2 de decisão
+            var posNeg = new Decisao2();
+
+            Console.WriteLine("Digite um numero: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("O numero digitado é " + posNeg.posNeg(num));
             Console.ReadKey();
 
         }
