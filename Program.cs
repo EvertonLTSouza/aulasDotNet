@@ -35,7 +35,8 @@ namespace Aulas_dotNet
             Console.ReadKey();
             */
             
-            //Segundo exercicio 2 de decisão
+            //Segundo exercicio de decisão
+            /*
             var posNeg = new Decisao2();
 
             Console.WriteLine("Digite um numero: ");
@@ -43,8 +44,24 @@ namespace Aulas_dotNet
             
             Console.WriteLine("O numero digitado é " + posNeg.posNeg(num));
             Console.ReadKey();
+            */
 
+            //Segundo exercicio de Repeticao
+            var compStr = new Repeticao2();
+            
+            Console.Write("Digite o usuário: ");
+            string usuario = Console.ReadLine();
+            string senha;
+            do
+            {
+                Console.Write("Digite a senha: ");
+                senha = Console.ReadLine();
+            }
+            while(compStr.compStr(usuario, senha));
+            Console.ReadKey();
+            
         }
+
     }
 }
 
