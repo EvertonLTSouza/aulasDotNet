@@ -6,6 +6,18 @@ namespace Aulas_dotNet
     {
         static void Main(string[] args)
         {   
+            //Repetição 6
+            var impr = new Repeticao6();
+
+            for (int i = 0; i < 20; i++){
+                impr.printNextLine();
+            }
+            impr.setNum(1);
+            for (int i = 0; i < 20; i++){
+                impr.printNextNum();
+            }
+            Console.ReadKey();
+            /*
             //Exercicio 6 de Decisao
             var numero = new Decisao6();
 
@@ -21,7 +33,7 @@ namespace Aulas_dotNet
             Console.Write("O Maior numero digitado foi: " + numero.maiorNumero());
 
             Console.ReadKey();
-
+            */
 
             //Exercicio 5 de Repeticao
             /*
