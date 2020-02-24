@@ -6,7 +6,22 @@ namespace Aulas_dotNet
     {
         static void Main(string[] args)
         {
+            //Exercicio 4 de Repetição
+            var populacao = new Repeticao4();
+            while(!populacao.Maior())
+            {
+                Console.WriteLine(
+                    "Ano:   " + populacao.ano + 
+                    "     Populacao A: " + populacao.populacaoA + 
+                    "     Populacao B: " + populacao.populacaoB);
+                populacao.proxAno();
+            }
+            
+
+            Console.ReadKey();
+
             //Exercicio 4 de decisao
+            /*
             var vogal = new Decisao4();
 
             Console.Write("Digite um caracter: ");
@@ -22,6 +37,8 @@ namespace Aulas_dotNet
             }
 
             Console.ReadKey();
+
+            */
 
             //Exercicio 3 de Repeticao
             /*
