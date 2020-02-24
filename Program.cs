@@ -6,7 +6,25 @@ namespace Aulas_dotNet
     {
         static void Main(string[] args)
         {   
+            //Exercicio 6 de Decisao
+            var numero = new Decisao6();
+
+            for(int i = 0; i < 3; i++)
+            {
+                Console.Write("Digite o "+ (i+1) + "° numero: ");
+                numero.setNumero(
+                    Convert.ToInt32(Console.ReadLine()),
+                    i
+                );
+            }
+
+            Console.Write("O Maior numero digitado foi: " + numero.maiorNumero());
+
+            Console.ReadKey();
+
+
             //Exercicio 5 de Repeticao
+            /*
             var populacao = new Repeticao4();
             Console.Write("Entre com a População A: ");
             populacao.populacaoA = Convert.ToInt32(Console.ReadLine());
@@ -35,6 +53,7 @@ namespace Aulas_dotNet
                 populacao.proxAno();
             }
             Console.ReadKey();
+            */
             //Exercicio 5 de decisão
             /*
             var aluno = new Decisao5();
