@@ -3,10 +3,29 @@
 namespace Aulas_dotNet
 {
     class Program
-    {
+    {   
         static void Main(string[] args)
         {   
+            //Decisao 7
+            var numero = new Decisao6();
+
+            for(int i = 0; i < 3; i++)
+            {
+                Console.Write("Digite o "+ (i+1) + "° numero: ");
+                numero.setNumero(
+                    Convert.ToInt32(Console.ReadLine()),
+                    i
+                );
+            }
+
+            Console.WriteLine("O Maior numero digitado foi: " + numero.maiorNumero());
+            Console.Write("O Menor numero digitado foi: " + numero.menorNumero());
+
+
+            Console.ReadKey();
+
             //Repetição 6
+            /*
             var impr = new Repeticao6();
 
             for (int i = 0; i < 20; i++){
@@ -17,6 +36,7 @@ namespace Aulas_dotNet
                 impr.printNextNum();
             }
             Console.ReadKey();
+            */
             /*
             //Exercicio 6 de Decisao
             var numero = new Decisao6();

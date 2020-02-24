@@ -22,4 +22,20 @@ public class Decisao6
             return numeros[2];
         }
     }
+
+    public int menorNumero()
+    {
+        if (numeros[0] < numeros[1] && numeros[0] < numeros[2])
+        {
+            return numeros[0];
+        }
+        else if(numeros[1] < numeros[2])
+        {
+            return numeros[1];
+        }
+        else
+        {
+            return numeros[2];
+        }
+    }
 }
