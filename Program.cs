@@ -47,6 +47,7 @@ namespace Aulas_dotNet
             */
 
             //Segundo exercicio de Repeticao
+            /*
             var compStr = new Repeticao2();
             
             Console.Write("Digite o usuário: ");
@@ -59,7 +60,16 @@ namespace Aulas_dotNet
             }
             while(compStr.compStr(usuario, senha));
             Console.ReadKey();
-            
+            */
+
+            //Exercicio 3 de Decisao
+            var sexo = new Decisao3();
+
+            Console.Write("Informe seu sexo (F/M): ");
+            char genero = System.Convert.ToChar(Console.ReadLine());
+
+            Console.WriteLine("Sexo informado: " + sexo.Sexo(genero));
+            Console.ReadKey();
         }
 
     }
