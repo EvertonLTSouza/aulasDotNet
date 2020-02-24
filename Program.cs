@@ -5,8 +5,38 @@ namespace Aulas_dotNet
     class Program
     {
         static void Main(string[] args)
-        {
+        {   
+            //Exercicio 5 de Repeticao
+            var populacao = new Repeticao4();
+            Console.Write("Entre com a População A: ");
+            populacao.populacaoA = Convert.ToInt32(Console.ReadLine());
+            do
+            {
+                Console.Write("Entre com a População B (Deve ser maior que a A): ");
+                populacao.populacaoB = Convert.ToInt32(Console.ReadLine());    
+            }
+            while(populacao.Maior());
+        
+            Console.Write("Entre com a Taxa de Crescimento B: ");
+            populacao.setTaxaB(Convert.ToDouble(Console.ReadLine()));
+            do
+            {
+                Console.Write("Entre com a Taxa de Crescimento A (Deve ser Maior que a taxa B): ");
+                populacao.setTaxaA(Convert.ToDouble(Console.ReadLine()));
+            }
+            while(!populacao.CompTaxa());
+
+            while(!populacao.Maior())
+            {
+                Console.WriteLine(
+                    "Ano:   " + populacao.ano + 
+                    "     Populacao A: " + populacao.populacaoA + 
+                    "     Populacao B: " + populacao.populacaoB);
+                populacao.proxAno();
+            }
+            Console.ReadKey();
             //Exercicio 5 de decisão
+            /*
             var aluno = new Decisao5();
             Console.Write("Digite a primeira nota: ");
             aluno.nota1 = Convert.ToDouble(Console.ReadLine());
@@ -14,7 +44,7 @@ namespace Aulas_dotNet
             aluno.nota2 = Convert.ToDouble(Console.ReadLine());
             Console.Write("Situação: " + aluno.Situacao());
             Console.ReadKey();
-            
+            */
             /*
             //Exercicio 4 de Repetição
             var populacao = new Repeticao4();
