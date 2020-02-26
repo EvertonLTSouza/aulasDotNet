@@ -6,7 +6,11 @@ namespace Aulas_dotNet
     {   
         static void Main(string[] args)
         {   
+            //Repeticao 7
+
+
             //Decisao 7
+            /*
             var numero = new Decisao6();
 
             for(int i = 0; i < 3; i++)
@@ -23,7 +27,7 @@ namespace Aulas_dotNet
 
 
             Console.ReadKey();
-
+            */
             //Repetição 6
             /*
             var impr = new Repeticao6();
