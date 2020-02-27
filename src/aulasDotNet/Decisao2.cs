@@ -1,4 +1,6 @@
-public class Decisao2 
+namespace Aulas_dotNet
+{
+public class Decisao2
 {
     public string posNeg(int a)
     {
@@ -11,4 +13,5 @@ public class Decisao2
             return "Positivo";
         }
     }
+}
 }
